@@ -1,16 +1,3 @@
-<template>
-    <div class="c-form">
-        <input v-if="employee !== null" class="input-field" type="text" value="emp">
-        <input v-if="employee !== null" class="input-field" type="text">
-        <input v-if="employee !== null" class="input-field" type="number">
-        <input v-if="employee !== null" class="input-field" type="number">
-    </div>
-
-    <div class="update-button">
-        <RouterLink to="/">Update Employee</RouterLink>
-    </div>
-</template>
-
 <script setup lang="ts">
 import { useEmployeesStore } from '@/stores/employees';
 import { RouterLink } from 'vue-router';
@@ -26,6 +13,19 @@ if (props.id !== undefined) {
     console.log("Employee Info: ", employee);
 }
 </script>
+
+<template>
+    <div class="c-form">
+        <input v-if="employee !== null" class="input-field" type="text" value="`{{ employee.name }}`">
+        <input v-if="employee !== null" class="input-field" type="text">
+        <input v-if="employee !== null" class="input-field" type="number">
+        <input v-if="employee !== null" class="input-field" type="number">
+    </div>
+
+    <div class="update-button">
+        <RouterLink to="/">Update Employee</RouterLink>
+    </div>
+</template>
 
 <style scoped>
 .c-form {

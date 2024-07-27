@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { RouterLink } from 'vue-router';
 import { useEmployeesStore } from '@/stores/employees';
 
@@ -10,7 +10,7 @@ const employees = employeesStore.getAllEmployees;
     <div class="c-employee-list" v-for="employee in employees" :key="employee.id">
         <div class="c-employee">
             <p>{{ employee.name }} {{ employee.surname }}</p>
-            <RouterLink to="/edit-employee">Edit Employee</RouterLink>
+            <RouterLink :to="`/edit-employee/${employee.id}`">Edit Employee</RouterLink>
         </div>
     </div>
 </template>

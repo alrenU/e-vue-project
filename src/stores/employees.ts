@@ -25,7 +25,7 @@ export const useEmployeesStore = defineStore("employees", {
                return state.employees;
           },
 
-          // REFACTOR: any
+          // (Refactor) The function return type `any` might be inappropriate.
           getEmployeeById(state): any {
                return (employeeId: number) => {
                     return state.employees.find(employee => employee.id === employeeId)
