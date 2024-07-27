@@ -1,39 +1,16 @@
-# vue-project
+# e-vue-project
+This project's aim is to experiment the basics of the VueJS framework and its concepts. It is a simple employee management application which consist of several pages and components. It is also simple to test these components to learn testing in VueJS.
 
-This template should help get you started developing with Vue 3 in Vite.
+# Tech Stack
+- Vite (Local Development Server)
+- Bun (Bundler)
+- Vue3 (JS Framework)
+- Pinia (State Management)
+- Vue Router (Routing Between the Components)
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-bun install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-bun dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-bun build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-bun lint
-```
+# Folder Structure
+The project starts from src folder's `main.ts` file and mounts `App.vue` component.
+- The basic CSS stylings are kept inside the `assets` folder.
+- `components` folder is the place where the components reside.
+- `routes` folder keeps the routing related logic files in it.
+- `stores` folder is where the component states are held.
