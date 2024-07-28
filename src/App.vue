@@ -15,7 +15,8 @@ import { RouterLink, RouterView } from 'vue-router';
         <hr>
       </div>
 
-      <div class="add-employee-button">
+      <div class="buttons-container">
+        <RouterLink to="/">Return to Homepage</RouterLink>
         <RouterLink to="/add-employee">Add Employee</RouterLink>
       </div>
 
@@ -42,10 +43,10 @@ import { RouterLink, RouterView } from 'vue-router';
     margin-block: 10px;
   }
 
-  .add-employee-button {
+  .buttons-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-block: 10px;
   }
 }
