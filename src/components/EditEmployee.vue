@@ -3,12 +3,11 @@ import { ref, watch, onMounted } from 'vue';
 import { useEmployeesStore } from '@/stores/employees';
 import { useRouter } from 'vue-router';
 
-const route = useRouter();
-
 const props = defineProps<{
     id?: string;
 }>();
 
+const route = useRouter();
 const name = ref<string | null>(null);
 const surname = ref<string | null>(null);
 const age = ref<number | null>(null);

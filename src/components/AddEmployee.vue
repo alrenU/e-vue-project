@@ -5,7 +5,6 @@ import type { Employee } from '@/stores/employees';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-
 const name = ref<string | undefined>(undefined);
 const surname = ref<string | undefined>(undefined);
 const age = ref<number | undefined>(undefined);
